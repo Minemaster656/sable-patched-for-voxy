@@ -432,6 +432,7 @@ public class ActiveSableCompanion implements SableCompanion {
 
     @Override
     public @Nullable SubLevel getTrackingSubLevel(final Entity entity) {
+        if (entity == null) return null;
         return ((EntityMovementExtension) entity).sable$getTrackingSubLevel();
     }
 
